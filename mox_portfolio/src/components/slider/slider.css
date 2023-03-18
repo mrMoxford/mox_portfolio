@@ -1,0 +1,47 @@
+
+.mox__profile-slider {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  
+    
+}
+
+.slider-container{
+    height:100%;
+    width: 100%;
+    position: relative;
+    
+}
+.slider-container img {
+    max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+.slider__arrow{
+position:absolute;
+top: 50%;
+transform: translate(0,-50%);
+font-size:3rem;
+color:white;
+Z-index: 1;
+cursor:pointer;
+}
+.left {
+    left: 0;
+}
+.right{
+    right: 0;
+}
+
+.dots-container{
+    margin-top: 1rem;
+}
+.dots{
+    margin-top: 2rem;
+    cursor:pointer;
+    font-size: 2rem;
+}

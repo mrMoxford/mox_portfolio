@@ -1,0 +1,45 @@
+.mox__profile-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.title-text{
+    background:rgb(30, 20, 20);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: max-content;
+    font-weight: 700;
+    font-size:clamp(.5rem, 4vw, 5rem);
+}
+
+
+.title-text p {
+    border-bottom: 4px solid white;
+    
+}
+
+.mox-profile-header_cta-button{
+    margin-top: 2rem;
+}
+
+.mox-profile-header_cta-button img {
+   width: clamp(5rem,20vw,20rem);
+   aspect-ratio: 1/1;
+    
+}
+
+@media (min-width: 56.25em){
+    .mox__profile-header{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .mox-profile-header_cta-button{
+        margin-top:0;
+        justify-content: flex-end;
+    }
+}

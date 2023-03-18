@@ -1,0 +1,21 @@
+.mox__profile-CTA{
+    display:grid;
+    place-items:center;
+    text-align: left;
+    
+}
+.about-me-cards{
+    display:grid;
+    place-items:center;
+    width:100%;
+    gap: 2rem;
+    place-items: start;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+}
+
+@media (min-width:48em ){
+    
+    .about-me-title {
+        place-self: start;
+    }
+}
