@@ -1,34 +1,24 @@
 import "./contactForm.css";
 import InputField from "../inputfield/InputField";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import SelectField from "../selectfield/SelectField";
 import TextAreaField from "../text-field/TextAreaField";
 import { BsChevronCompactRight } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const [values, setValues] = useState({
-    fullName: "",
-    email: "",
-    enquiry: "",
-    message: "",
-  });
   const [status, setStatus] = useState("");
-  const handleChange = e => {
-    setValues(values => ({ ...values, [e.target.name]: e.target.value }));
-  };
+
+  const formRef = useRef();
 
   const handleSubmit = e => {
     e.preventDefault();
-    emailjs.send("service_4j3ho6b", "template_al2b6ax", values, "dPeSSfRFfQQQ0tFl0").then(
+
+    emailjs.sendForm(import.meta.env.VITE_REACT_APP_SERVICE_ID, import.meta.env.VITE_REACT_APP_TEMPLATE_ID, formRef.current, import.meta.env.VITE_REACT_APP_PUBLIC_KEY).then(
       response => {
         console.log("SUCCESS!", response);
-        setValues({
-          fullName: "",
-          email: "",
-          enquiry: "",
-          message: "",
-        });
+        formRef.current.reset();
+
         setStatus("SUCCESS");
       },
       error => {
@@ -40,12 +30,12 @@ const ContactForm = () => {
   return (
     <div className="contact-form | p-4 bg-black rounded-2xl text-white flex-1 ">
       {status && renderAlert()}
-      <form onSubmit={handleSubmit}>
+      <form ref={formRef} onSubmit={handleSubmit}>
         {/* <h3 className="text-gray-700 text-2xl font-semibold uppercase">Shoot me a message</h3> */}
-        <InputField label="Full Name" name="fullName" type="text" placeholder="John Doe" handleChange={handleChange} value={values.fullName} />
-        <InputField label="E-mail" name="email" type="email" placeholder="john@exanple.com" handleChange={handleChange} value={values.email} />
-        <SelectField label="Enquiry Type" name="enquiry" handleChange={handleChange} value={values.enquiry} />
-        <TextAreaField label="Your Message" name="message" handleChange={handleChange} value={values.message} />
+        <InputField label="Full Name" name="fullName" type="text" placeholder="John Doe" />
+        <InputField label="E-mail" name="email" type="email" placeholder="john@exanple.com" />
+        <SelectField label="Enquiry Type" name="enquiry" />
+        <TextAreaField label="Your Message" name="message" />
         <button value="submit" type="submit" className=" bg-white text-black rounded hover:bg-red-500 hover:text-white px-4 py-2 uppercase focus:outline-dashed">
           send
           <BsChevronCompactRight className=" w-6 ml-2 mt-1 float-right" />
