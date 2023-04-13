@@ -27,7 +27,7 @@ top: 50%;
 transform: translate(0,-50%);
 font-size:3rem;
 color:white;
-Z-index: 1;
+z-index: 1;
 cursor:pointer;
 }
 .left {
