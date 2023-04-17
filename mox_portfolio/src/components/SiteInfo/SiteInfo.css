@@ -1,0 +1,24 @@
+
+.button-container{
+    display:flex;
+    gap:2rem;
+    align-items:center;
+    justify-content: center;
+    margin-block: 1rem;
+}
+
+a{
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.Live{
+    background-color: black;
+    color:white;
+}
+    
+
+.Code{
+    border: 2px solid black;
+    color:black;
+}

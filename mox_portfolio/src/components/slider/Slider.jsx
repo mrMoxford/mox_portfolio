@@ -1,7 +1,8 @@
 import "./slider.css";
 import React, { useState } from "react";
-
-const Slider = ({ images }) => {
+import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+import SiteInfo from "../SiteInfo/SiteInfo";
+const Slider = ({ images, github, live }) => {
   const [currentIndex, setcurrentIndex] = useState(0);
 
   const goLeft = () => {
@@ -19,21 +20,30 @@ const Slider = ({ images }) => {
       <div className="slider-container">
         <div className="mox__profile-images_arrows">
           <div className="slider__arrow left" onClick={goLeft}>
-            ⇦
+            <FaChevronCircleLeft color="red" />
           </div>
           <div className="slider__arrow right" onClick={goRight}>
-            ⇨
+            <FaChevronCircleRight color="red" />
           </div>
         </div>
-        <img className="w-full" src={`${images[currentIndex]}`} alt="project-slider" />
+        <img
+          className="w-full"
+          src={`${images[currentIndex]}`}
+          alt="project-slider"
+        />
       </div>
-      <div className=" dots-container| flex">
+      <SiteInfo live={live} github={github} />
+      {/* <div className=" dots-container| flex">
         {images.map((image, imageIndex) => (
-          <div className="dots" key={imageIndex} onClick={() => setcurrentIndex(imageIndex)}>
+          <div
+            className="dots"
+            key={imageIndex}
+            onClick={() => setcurrentIndex(imageIndex)}
+          >
             ⚫
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

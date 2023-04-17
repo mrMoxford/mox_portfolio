@@ -1,18 +1,20 @@
-import coffee01 from "../assets/coffee01.png";
-import coffee02 from "../assets/coffee02.png";
-import coffee03 from "../assets/coffee03.png";
-import coffee04 from "../assets/coffee04.png";
-import coffee05 from "../assets/coffee05.png";
+import coffee01 from "../assets/odessycoffee-home.png";
+import coffee02 from "../assets/odessycoffee-explore.png";
+import coffee03 from "../assets/odessycoffee-explore-region.png";
+import coffee04 from "../assets/odessycoffee-store.png";
+import coffee05 from "../assets/odessycoffee-store-singleitem.png";
+import coffee06 from "../assets/odessycoffee-signup.png";
+import coffee07 from "../assets/odessycoffee-login.png";
 import interiorDesign01 from "../assets/interiorDesign01.png";
 import interiorDesign02 from "../assets/interiorDesign02.png";
 import interiorDesign03 from "../assets/interiorDesign03.png";
 import interiorDesign04 from "../assets/interiorDesign04.png";
 import interiorDesign05 from "../assets/interiorDesign05.png";
-import onsen01 from "../assets/onsen01.png";
-import onsen02 from "../assets/onsen02.png";
-import onsen03 from "../assets/onsen03.png";
-import onsen04 from "../assets/onsen04.png";
-import onsen05 from "../assets/onsen05.png";
+import onsen01 from "../assets/technobabble-home.png";
+import onsen02 from "../assets/technobabble-post.png";
+import onsen03 from "../assets/technobabble-login.png";
+import onsen04 from "../assets/technobabble-signup.png";
+
 import { ProfilePhotoNoBg } from "../assets";
 import { ProfilePhotoNoBg2 } from "../assets";
 import { default as arsenalFc } from "../assets/arsenalFc.png";
@@ -26,6 +28,8 @@ export default {
   coffee03,
   coffee04,
   coffee05,
+  coffee06,
+  coffee07,
   interiorDesign01,
   interiorDesign02,
   interiorDesign03,
@@ -35,7 +39,6 @@ export default {
   onsen02,
   onsen03,
   onsen04,
-  onsen05,
   ProfilePhotoNoBg,
   ProfilePhotoNoBg2,
   arsenalFc,
