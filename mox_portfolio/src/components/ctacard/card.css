@@ -1,9 +1,21 @@
+
+
+.mox__profile-CTA_cards-container{
+    column-gap: 2rem;
+}
+
 .about-me-img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 1rem 1rem 0 0;
+    
 }
 .card-image{
     border-radius:50%;
+    max-width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+    
 }
 .about-me-content{
     width: 100%;

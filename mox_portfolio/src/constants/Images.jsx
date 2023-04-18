@@ -14,13 +14,14 @@ import onsen01 from "../assets/technobabble-home.png";
 import onsen02 from "../assets/technobabble-post.png";
 import onsen03 from "../assets/technobabble-login.png";
 import onsen04 from "../assets/technobabble-signup.png";
-
 import { ProfilePhotoNoBg } from "../assets";
 import { ProfilePhotoNoBg2 } from "../assets";
-import { default as arsenalFc } from "../assets/arsenalFc.png";
-import { default as coffeeCircle } from "../assets/coffeeCircle.png";
+import { default as arsenalFc } from "../assets/aboutMe-football.png";
+import { default as coffeeCircle } from "../assets/aboutMe-coffee.png";
 import { default as sciFi } from "../assets/sciFi.png";
-import { default as anime } from "../assets/anime.png";
+import { default as anime } from "../assets/aboutMe-anime.png";
+import { default as design } from "../assets/aboutMe-design.png";
+import { default as onsen } from "../assets/aboutMe-sauna.png";
 
 export default {
   coffee01,
@@ -45,4 +46,6 @@ export default {
   coffeeCircle,
   sciFi,
   anime,
+  design,
+  onsen,
 };

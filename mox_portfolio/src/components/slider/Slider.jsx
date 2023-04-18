@@ -3,27 +3,23 @@ import React, { useState } from "react";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 import SiteInfo from "../SiteInfo/SiteInfo";
 const Slider = ({ images, github, live }) => {
-  const [currentIndex, setcurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const goLeft = () => {
-    const isfirstImage = currentIndex === 0;
-    const newIndex = isfirstImage ? images.length - 1 : currentIndex - 1;
-    setcurrentIndex(newIndex);
+    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
   const goRight = () => {
-    const isLastImage = currentIndex === images.length - 1;
-    const newIndex = isLastImage ? 0 : currentIndex + 1;
-    setcurrentIndex(newIndex);
+    setCurrentIndex((currentIndex + 1) % images.length);
   };
   return (
     <div className="mox__profile-slider | flex">
       <div className="slider-container">
         <div className="mox__profile-images_arrows">
           <div className="slider__arrow left" onClick={goLeft}>
-            <FaChevronCircleLeft color="red" />
+            <FaChevronCircleLeft color="black" size="5vw" />
           </div>
           <div className="slider__arrow right" onClick={goRight}>
-            <FaChevronCircleRight color="red" />
+            <FaChevronCircleRight color="black" size="5vw" />
           </div>
         </div>
         <img
