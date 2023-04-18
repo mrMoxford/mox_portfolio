@@ -39,7 +39,8 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
- 
+  background: radial-gradient(black 1px, transparent 0);
+  background-size: 40px 40px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   color: white;
