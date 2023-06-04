@@ -2,6 +2,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
 
@@ -14,16 +15,19 @@
     width: max-content;
     font-weight: 700;
     font-size:clamp(.5rem, 4vw, 5rem);
-}
-
-
-.title-text p {
-    border-bottom: 4px solid white;
     
 }
 
+
+/* .title-text p {
+    border-bottom: 4px solid white;
+    
+} */
+
 .mox-profile-header_cta-button{
-    margin-top: 2rem;
+position: absolute;
+top: 2rem;
+right: 2rem;
 }
 
 .mox-profile-header_cta-button img {
