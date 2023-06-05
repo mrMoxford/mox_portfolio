@@ -6,7 +6,7 @@ const header = () => {
 
   const ref = useRef(null)
   
-  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+  const letters = "abcdefghijklmnopqrstuvwxyz1234567890"
   
 
   const handleHover = (e,value) =>{
@@ -23,14 +23,14 @@ const header = () => {
         <div  onMouseOver={(e)=> handleHover(e, "i'm Mox")} className="title-text">
           <p>i'm Mox</p>
         </div>
-        <div  onMouseOver={(e)=> handleHover(e,'A WEB DEVELOPER / DESIGNER')}  className="title-text">
-          <p>A WEB DEVELOPER / DESIGNER</p>
+        <div  onMouseOver={(e)=> handleHover(e,'a web developer / designer')}  className="title-text">
+          <p>a web developer / designer</p>
         </div>
-        <div  onMouseOver={(e)=> handleHover(e,'WITH A KEEN INTEREST IN PERFORMANCE')} className="title-text">
-          <p>WITH A KEEN INTEREST IN PERFORMANCE</p>
+        <div  onMouseOver={(e)=> handleHover(e,'ith a passion for acessibility')} className="title-text">
+          <p>with a passion for acessibility</p>
         </div>
-        <div onMouseOver={(e)=> handleHover(e,'AND A PASSION FOR ACCESSIBILITY')} className="title-text">
-          <p>AND A PASSION FOR ACCESSIBILITY</p>
+        <div onMouseOver={(e)=> handleHover(e,'and a keen interest in performance testing')} className="title-text">
+          <p>and a keen interest in performance testing</p>
         </div>
       </div>
       <div  className="mox-profile-header_cta-button | flex items-center justify-center">
