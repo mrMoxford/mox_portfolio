@@ -20,7 +20,7 @@ import movies  from "/movies.png";
 import arsenalFc from  "/arsenalFc.png";
 import coffeeCircle  from "/coffeeCircle.png";
 import sciFi  from "/sciFi.png";
-import union from "/union.png"
+import union from "/Union.png"
 import responsive  from "/responsive.png"
 import accessibilty from "/accessible.png"
 import performance  from "/perfomance.png"
