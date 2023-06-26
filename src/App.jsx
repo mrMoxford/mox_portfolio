@@ -9,11 +9,11 @@ import { Navbar } from "src/components/";
 function App() {
   return (
     <div>
-      <Navbar />
-      <Header />
+      <Navbar/>
+      <Header/>
       <AboutMe/>
-      <Projects />
-      <Footer />
+      <Projects/>
+      <Footer/>
     </div>
   );
 }

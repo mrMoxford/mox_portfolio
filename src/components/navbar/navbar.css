@@ -2,18 +2,15 @@
     width: 100%;
     align-items: center; 
     justify-content: flex-end; 
-    background: black;
+    background:white;
     display: flex; 
     
    
  
 }
-.mox__profile-navbar_menu{
-    position: relative;
-   
-}
+
 .mox__profile-navbar_container{
-    display:none;
+    display: flex;
     width: 100%;
     position: relative;
    
@@ -42,9 +39,14 @@
     width: 100%;
     justify-content: space-evenly;
 
-    
 }
-
+.toggle-nav{
+    flex-direction: column;
+    gap: 2rem;
+}
+.toggle-nav > li {
+    font-size:2rem;
+}
 .mox__profile-navbar_container li{
     background-color: none;
     transition: 300ms ease-in;
@@ -56,10 +58,11 @@
 
 .navLink{
     position: relative;
-    color:white;
-    margin-inline: 4rem;
+    color:black;
+    margin-inline: 2rem;
     font-weight: 300;
     margin-block: 0;
+    margin-left:auto;
 }
 
   
@@ -67,10 +70,9 @@
 .navLink > a {
     position: absolute;
     font-size: 1rem;
-    /* padding: 1rem; */
     transition: scale 300ms ease-in;
 }
-.navLink > a:hover {
+.navLink > a:hover, a:focus {
     scale: 1.5;
     font-weight: 500;
     text-transform: uppercase;
@@ -81,31 +83,39 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items:center;
-    color: white;
+    color: black;
     gap: 2rem;
 }
-.menu-open, .menu-close{
+.menu-open,
+.menu-close{
+    width: 3rem;
+    aspect-ratio: 1.2/1;
+    cursor: pointer;
     position: absolute;
-    top: 50%;
-    right: 0;
-    height: 2rem;
-    width: 2rem;
-    object-fit: contain;
+    top: 1rem;
+    right: 1rem;
 }
 
-@media (min-width: 49em){
+@media (min-width: 40em){
     .mox__profile-navbar_menu{
         display:none;
     }
+    
+   
+}
+
+@media(max-width: 40em){
+    .mox__profile-navbar_menu{
+        display:flex;
+        width: 100%;
+    } 
     .mox__profile-navbar_container{
         display:flex;
     }
-    .nav-list{
-        flex-direction: row;
+    .mox__profile-navbar_container {
+        display: none;
     }
-}
-
-
+} 
 
 
 

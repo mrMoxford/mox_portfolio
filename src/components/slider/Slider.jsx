@@ -46,13 +46,9 @@ const toggleAccordian = (activeButton,activeContent) => {
               </div>
             <div  className="project-info" id={`project--${index}`} aria-hidden="true" >
               <div  className="info-container"  >
+              <h3>{project.name}</h3>
               <p>
-                project details as follows... Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Odio veritatis laborum dignissimos
-                laudantium rerum nesciunt consequatur culpa similique et eius
-                accusantium quaerat in, atque ratione quos sint aliquid deserunt
-                alias.
-                
+               {project.summary}
               </p>
               <div className="project-links">
                 <a

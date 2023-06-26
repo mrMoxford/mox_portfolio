@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import "./aboutMe.css";
-import index from "src/assets/index"
+import index from "../../assets/index"
 
 
 const AboutMe = () => {
@@ -18,7 +18,7 @@ const AboutMe = () => {
         duration: 1.4,
         scrollTrigger: {
           trigger: "#last-slide",
-           markers: true
+           markers: false
            }
       })
     .to(".hide", {
@@ -34,7 +34,7 @@ const AboutMe = () => {
 
   const {onsen01} = index
   return (
-    <section className=" about-me | section__padding flex flex-col mask">
+    <section id="about" className=" about-me | section__padding flex flex-col mask">
       <h2 className="about-me__title | lg:text-6xl md:text-5xl text-4xl uppercase  mb-4">
         About Me
       </h2>
@@ -44,45 +44,25 @@ const AboutMe = () => {
         </div>
         <div
          
-          className="about-me__text | flex flex-col align-center"
+          className="about-me__text | flex flex-col align-end"
         >
           <div id="first-slide"className="mask">
             <p className="animated-text hide">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-              perferendis magnam enim fuga esse impedit aliquid totam molestias
-              deserunt tempora, repellendus laudantium nemo accusamus ut
-              temporibus dolorum? Cum, vitae explicabo.
+            My name is Mohamed-Deeq Abdi better known as Mox, I’m a frontend web developer from London UK, currently based in Tokyo Japan.
+
             </p>
           </div>
           <div className="mask">
-          <p className="animated-text hide">
-            Et dolorem eligendi facilis cum ea sit ex officia asperiores
-            dolores, veniam quam nihil sapiente! Enim quia saepe quam, deserunt
-            ipsum fugit reprehenderit veniam accusamus optio rem soluta
-            aspernatur neque.
+          <p id="middle-slide" className="animated-text hide">
+          I have keen interest in developing websites that are fast, well built with accessibility at the forefront. I continually incorporate good UI/UX design principles to ensure that my websites cater to all the needs of the business and the consumer. 
           </p>
           </div>
           <div className="mask">
-          <p id="middle-slide"className="animated-text hide">
-            Ducimus ipsum animi debitis veritatis unde amet molestiae recusandae
-            consectetur similique libero iste ab, facilis est, nam nihil
-            laboriosam et culpa. Aperiam voluptas aliquam assumenda. Rerum fuga
-            aut a explicabo.
+          <p id="last-slide" className="animated-text hide">
+          When I’m not coding, I enjoy reading and learning about design history, my current books on rotation  are : Grid Systems by Kimberly Elam,  and Atomic Habits by James Clear.
           </p>
           </div>
-          <div className="mask">
-          <p id="last-slide"className="animated-text hide">
-            {" "}
-            Voluptatibus maxime quasi eaque, doloribus nihil, placeat ratione
-            sit error perspiciatis id amet voluptatum nostrum. Quos doloremque
-            quaerat illum id. Consequuntur possimus aspernatur laborum unde
-            perferendis illum at eveniet voluptatem.
-          </p>
-          </div>
-
          
-         
-          
         </div>
       </div>
     </section>

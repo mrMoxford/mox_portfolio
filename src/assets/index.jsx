@@ -21,9 +21,9 @@ import arsenalFc from  "/arsenalFc.png";
 import coffeeCircle  from "/coffeeCircle.png";
 import sciFi  from "/sciFi.png";
 import union from "/Union.png"
-import responsive  from "/responsive.png"
+import  responsive   from "/responsive.png"
 import accessibilty from "/accessible.png"
-import performance  from "/perfomance.png"
+import performance  from "/performance.png"
 import coffee04 from "/coffee04.png"
 import coffee from "/coffeeProject.png";
 import gpt3  from "/gpt3Project.png"

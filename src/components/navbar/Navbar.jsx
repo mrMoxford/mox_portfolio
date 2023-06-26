@@ -29,11 +29,11 @@ const Navbar = () => {
     <nav className="mox__profile-navbar | section__padding flex text-black">
       <div className="mox__profile-navbar_container | text-lg font-bold ">
         <div className="profileLogo">
-          <p className="logo-type"> MOX.DEV</p>
+          <p className="logo-type"><a href="#home"> MOX.DEV</a></p>
           </div>
         <ul className="nav-list">
           <li className="navLink first">
-            <a  onMouseOver={(e)=> handleHover(e,'Home')} ßhref="#home">HOME</a>
+            <a  onMouseOver={(e)=> handleHover(e,'Home')} href="#home">HOME</a>
           </li>
           <li className="navLink second">
             <a onMouseOver={(e)=> handleHover(e,'About')} href="#about">ABOUT</a>
@@ -49,7 +49,7 @@ const Navbar = () => {
       <div className="mox__profile-navbar_menu">
         <img
         className="menu-open"
-          src={menuOpen}
+          src={menuClose}
           alt="menutoggle open"
           onClick={() => setMenuToggle(true)}
         />
@@ -58,11 +58,11 @@ const Navbar = () => {
         <div className="mox__profile-navbar_menu-overlay">
           <img
             className="menu-close"
-            src={menuClose}
+            src={menuOpen}
             alt="menutoggle closed"
             onClick={() => setMenuToggle(false)}
           />
-          <ul className="nav-list">
+          <ul className="nav-list toggle-nav">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -83,3 +83,37 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+{/* <div className="gpt3__navbar-menu">
+        { toggleMenu === null && <RiMenu3Line
+          className="menu__open"
+          color="hsl(0 0% 100%)"
+          size={27}
+          onClick={() => {
+            setToggleMenu("open");
+          }}
+        />}
+        
+        <div className={toggleMenu ? "gpt3__navbar-menu-toggle open" : "gpt3__navbar-menu-toggle"}>
+          <RiCloseLine
+            className="menu__close"
+            color="hsl(0 0% 100%)"
+            size={27}
+            onClick={() => {
+              setToggleMenu(null);
+            }}
+          />
+          <Menu />
+          <div className="gpt3__navbar-sign">
+            <a className=" sing-in" href="/">
+              Sign in
+            </a>
+            <button type="button" className="bg-accent text-white">
+              Sign up
+            </button>
+            <div />
+          </div>
+        </div>
+      </div> */}
