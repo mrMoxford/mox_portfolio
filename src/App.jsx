@@ -1,11 +1,9 @@
 import "./App.css";
 import {
   Header,
-  CTA,
-  InteriorDesign,
-  Onsen,
-  Coffee,
+  Projects,
   Footer,
+  AboutMe,
 } from "./containers";
 import { ContactForm, Navbar } from "./components";
 function App() {
@@ -13,9 +11,8 @@ function App() {
     <div>
       <Navbar />
       <Header />
-      <CTA />
-      <Coffee />
-      <Onsen />
+      <AboutMe/>
+      <Projects />
       <Footer />
     </div>
   );

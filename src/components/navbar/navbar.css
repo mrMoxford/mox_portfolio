@@ -2,10 +2,21 @@
     width: 100%;
     align-items: center; 
     justify-content: flex-end; 
+    background: black;
+    display: flex; 
+    
+   
+ 
+}
+.mox__profile-navbar_menu{
     position: relative;
+   
 }
 .mox__profile-navbar_container{
     display:none;
+    width: 100%;
+    position: relative;
+   
 }
 
 .mox__profile-navbar_menu-overlay {
@@ -18,39 +29,70 @@
     justify-content: center;
     align-items: center;
     color:white;
-    font-size: 3rem;
     font-weight:bold;
     touch-action: none;
     
 }
 .nav-list{
     list-style: none;
+    position: abosolute;
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+
     
 }
-.mox__profile-navbar_menu img,.mox__profile-navbar_menu-overlay img{
-    width: 3rem;
-    aspect-ratio: 1.2/1;
-    cursor: pointer;
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    
-}
+
 .mox__profile-navbar_container li{
     background-color: none;
     transition: 300ms ease-in;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.mox__profile-navbar_container li:hover{
-    background-color: rgb(30, 20, 20);
-    border-radius: .5rem;
+
+
+.navLink{
+    position: relative;
     color:white;
-    
+    margin-inline: 4rem;
+    font-weight: 300;
+    margin-block: 0;
 }
+
+  
+
+.navLink > a {
+    position: absolute;
+    font-size: 1rem;
+    /* padding: 1rem; */
+    transition: scale 300ms ease-in;
+}
+.navLink > a:hover {
+    scale: 1.5;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.profileLogo{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    gap: 2rem;
+}
+.menu-open, .menu-close{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+}
+
 @media (min-width: 49em){
     .mox__profile-navbar_menu{
         display:none;

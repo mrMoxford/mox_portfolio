@@ -39,7 +39,7 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  background: radial-gradient(black 1px, transparent 0);
+  background:white;
   background-size: 40px 40px;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -87,7 +87,7 @@ select {
 
 
 .section__padding{
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 .section__margin{
