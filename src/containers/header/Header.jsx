@@ -1,14 +1,9 @@
 import "./header.css";
 import React, { useRef}  from "react";
-// import {union,performance, accessibilty,responsive} from "../../assets/index"
-import union from "../../assets/index"
-import  performance from "../../assets/index"
-import accessibilty from "../../assets/index"
-import responsive from "../../assets/index"
-import MyRuler from "../../components/Ruler";
-
-
+import index from "src/assets/index"
+import MyRuler from "src/components/Ruler"
 const header = () => {
+const {performance,accessibilty,union, responsive} = index
 // refrences for the different text elements
   const imgContainerRef = useRef(null)
   const textContainerRef = useRef(null)
@@ -54,7 +49,6 @@ const arrayOfRefs = [performanceSvgRef,responsiveSvgRef,minimalSvgRef,accessibil
       </div>
     </div>
     <div ref={imgContainerRef} className="right-col">
-      <p> test</p>
       <img name="performance"src={performance} alt="performance" />
       <img name="responsive"src={responsive} alt="responsive" />
       <img name="minimal"src={union} alt="minimal" />

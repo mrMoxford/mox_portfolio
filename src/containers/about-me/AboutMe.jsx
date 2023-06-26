@@ -1,36 +1,38 @@
 import React, { useLayoutEffect, useRef } from "react";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import "./aboutMe.css";
-import onsen01 from "../../assets/index"
+import index from "src/assets/index"
+
 
 const AboutMe = () => {
   const contentRef = useRef(null);
   const tl = useRef()
-  // gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(ScrollTrigger);
  
-  // useLayoutEffect(() => {
-  //   const ctx = gsap.context(() => {
-  //     tl.current = gsap.timeline()
-  //   .to("img", {
-  //     clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
-  //       duration: 1.4,
-  //       scrollTrigger: {
-  //         trigger: "#last-slide",
-  //          markers: true
-  //          }
-  //     })
-  //   .to(".hide", {
-  //       duration: 3,
-  //       y: 0,
-  //       stagger: 0.3,
-  //       ease: "power2",
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      tl.current = gsap.timeline()
+    .to("img", {
+      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)',
+        duration: 1.4,
+        scrollTrigger: {
+          trigger: "#last-slide",
+           markers: true
+           }
+      })
+    .to(".hide", {
+        duration: 3,
+        y: 0,
+        stagger: 0.3,
+        ease: "power2",
         
   
-  //   });},contentRef)
-  //   return () => ctx.revert();
-  // }, []);
+    });},contentRef)
+    return () => ctx.revert();
+  }, []);
 
+  const {onsen01} = index
   return (
     <section className=" about-me | section__padding flex flex-col mask">
       <h2 className="about-me__title | lg:text-6xl md:text-5xl text-4xl uppercase  mb-4">

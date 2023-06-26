@@ -1,23 +1,8 @@
 import "./navbar.css";
 import React, { useEffect, useState } from "react";
-import Images from "../../constants/Images";
+import index from "src/assets/index"
+const {menuClose,menuOpen} = index
 
-const Menu = () => (
-  <ul className="nav-list">
-    <li>
-      <a href="#home">Home</a>
-    </li>
-    <li>
-      <a href="#about">About</a>
-    </li>
-    <li>
-      <a href="#projects">Projects</a>
-    </li>
-    <li>
-      <a href="#contact">contact</a>
-    </li>
-  </ul>
-);
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
 
@@ -64,7 +49,7 @@ const Navbar = () => {
       <div className="mox__profile-navbar_menu">
         <img
         className="menu-open"
-          src={Images.menuOpen}
+          src={menuOpen}
           alt="menutoggle open"
           onClick={() => setMenuToggle(true)}
         />
@@ -73,7 +58,7 @@ const Navbar = () => {
         <div className="mox__profile-navbar_menu-overlay">
           <img
             className="menu-close"
-            src={Images.menuClose}
+            src={menuClose}
             alt="menutoggle closed"
             onClick={() => setMenuToggle(false)}
           />

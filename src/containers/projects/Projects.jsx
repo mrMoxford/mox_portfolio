@@ -1,11 +1,9 @@
 import "./projects.css";
 import React from "react";
-import { Slider } from "../../components";
-import coffee from "../../assets/index";
-import space from "../../assets/index";
-import gpt3 from "../../assets/index";
+import { Slider } from "src/components";
+import index from "src/assets/index"
 const Projects = () => {
-  
+  const {coffee , space , gpt3} = index;
   const projects = [{
     name: "coffeeProject",
     image:coffee,
@@ -13,7 +11,7 @@ const Projects = () => {
     github:"https://github.com/mrMoxford/CoffeeProject",
   },
   {name: "ChatGPT3Project",
-    image:gpt3,
+    image: gpt3,
     live:"https://chatgpt3project.netlify.app",
     github:"https://github.com/mrMoxford/chatGPTProject"
   },

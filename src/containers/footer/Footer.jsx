@@ -1,6 +1,6 @@
 import "./footer.css";
 import React from "react";
-import ContactForm from "./../../components/contactForm/ContactForm";
+import ContactForm from "src/components/contactForm/ContactForm";
 const Footer = () => {
   return (
     <div className="mox__profile-footer--section | w-full section__padding" id="contact">

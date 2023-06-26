@@ -1,25 +1,19 @@
 import "./slider.css";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 
 const Slider = ({ projects }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const[toggleInfo, setToggleInfo]= useState({expanded: "false", hidden: "true"})
   const sliderRef = useRef(null);
-  const goLeft = () => {
-    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
-  };
-  const goRight = () => {
-    setCurrentIndex((currentIndex + 1) % images.length);
-  };
-  const handleLoad = (e, index) => {
-    const slideWidth = e.target.getBoundingClientRect().width;
-    e.target.style.left = slideWidth * index + "px";
-  };
+
 const handleAccordian = (e) =>  {
   const activePanel = e.target.closest(".project-card")
+  if(activePanel){
   const activeButton = activePanel.querySelector(".card-trigger")
   const activeContent = activePanel.querySelector(".project-info")
-  toggleAccordian(activeButton,activeContent)
+  return toggleAccordian(activeButton,activeContent)
+  }
+ 
 
 };
 
@@ -41,10 +35,12 @@ const toggleAccordian = (activeButton,activeContent) => {
         {projects.map((project, index) => (
           <div key={index} className="project-card flex">
             <div className="flex flex-col relative">
+              {console.log(project.image)}
             <img
               className="project-img"
               src={project.image}
               alt={project.name}
+             
             />
               <button className="card-trigger" aria-expanded="false" aria-controls={`project--${index}`}></button>
               </div>

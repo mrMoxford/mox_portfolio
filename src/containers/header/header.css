@@ -14,7 +14,7 @@
 .right-col{
     flex: 1;
     position: relative;
-    
+    border: 2px solid red;
 
 }
 .right-col > img{
@@ -22,7 +22,10 @@
  top: 0;
  height: 100%;
  width: 100%;
+ background: red;
+ z-index: 1000 !important;
  object-fit: cover;
+ 
  transition: z-index 200ms ease-in;
 }
 .right-col > p {
@@ -68,17 +71,6 @@ text-transform: uppercase;
 
 }
 
-/* .mox-profile-header_cta-button{
-position: absolute;
-top: 2rem;
-right: 2rem;
-} */
-
-/* .mox-profile-header_cta-button img {
-   width: clamp(5rem,20vw,20rem);
-   aspect-ratio: 1/1;
-    
-} */
 .mox__profile-alternate-header_text{
     display: none;
 }
