@@ -1,5 +1,6 @@
 .mox__profile-header{
     justify-content: space-between;
+    position: relative;
 }
 
 .left-col{
@@ -72,7 +73,19 @@ text-transform: uppercase;
 .mox__profile-alternate-header_text{
     display: none;
 }
-
+.mox-profile-header_cta-button{
+    position: absolute;
+    top:50%;
+    right: 0;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.mox-profile-header_cta-button img {
+    width: clamp(5rem,10vw,10rem);
+    aspect-ratio: 1/1;
+ 
+ }
 @media(max-width: 50em){
     .mox__profile-header{
         flex-direction: column;
@@ -92,12 +105,21 @@ text-transform: uppercase;
     .right-col > img {
         width: 100%;
     }
-   
+    .mox-profile-header_cta-button{
+        top:75%;
+        
+    }
+}
+@media (max-width: 48em){
+    .mox-profile-header_cta-button{
+        transform: none;
+    }
 }
 @media( max-width: 28.5em){
     .title > p {
         color: black;
     }
+   
 }
 
 

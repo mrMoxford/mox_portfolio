@@ -6,6 +6,7 @@ import ProfilePhoto from "/ProfilePhoto.svg";
 import ProfilePhotoNoBg from "/ProfilePhotoNoBg.png";
 import ProfilePhotoNoBg2 from  "/ProfilePhotoNoBg2.png";
 import ExploreBtnBw from "/ExploreBtnBw.png";
+import ExploreBtn from "/ExploreBtn.png"
 import menuClose from  "/menuClose.png";
 import menuOpen from "/menuOpen.png";
 import soccerBall from  "/soccerBall.png";
@@ -41,6 +42,7 @@ ProfilePhoto,
 ProfilePhotoNoBg,
 ProfilePhotoNoBg2,
 ExploreBtnBw,
+ExploreBtn,
 menuClose,
 menuOpen,
 soccerBall,

@@ -5,7 +5,7 @@ import index from "src/assets/index"
 
 import MyRuler from "src/components/Ruler"
 const header = () => {
-const {performance,accessibilty,union,responsive} = index
+const {performance,accessibilty,union,responsive, ExploreBtn} = index
 // refrences for the different text elements
   const imgContainerRef = useRef(null)
   const textContainerRef = useRef(null)
@@ -57,7 +57,11 @@ const {performance,accessibilty,union,responsive} = index
       <img name="minimal"src={union} alt="minimal" />
       <img name="accessibility" src={accessibilty} alt="accessibility" />
       </div>
-   
+      <div className="mox-profile-header_cta-button | flex items-center justify-center">
+        <a href="#projects">
+          <img src={ExploreBtn} alt="explore my passion projects" />
+        </a>
+      </div>
     </header>
   );
 };
