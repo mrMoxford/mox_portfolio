@@ -39,7 +39,7 @@ const {performance,accessibilty,union,responsive} = index
      }
   }
   return (
-    <header id="/" className="mox__profile-header | section__padding  flex">
+    <header id="home" className="mox__profile-header | section__padding  flex">
       <div className="left-col | flex ">
       <MyRuler ref={[performanceSvgRef,responsiveSvgRef,minimalSvgRef,accessibilitySvgRef]} />
       <div ref={textContainerRef} className="title">

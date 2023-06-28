@@ -112,7 +112,7 @@
     .mox__profile-navbar_container{
         display:flex;
     }
-    .mox__profile-navbar_container {
+    .mox__profile-navbar_container > .nav-list {
         display: none;
     }
 } 

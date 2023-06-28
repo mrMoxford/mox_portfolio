@@ -52,10 +52,10 @@
    font-family: 'Helvetica Neue';
     font-weight: 400;
     font-size: 64px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     width: max-content;
     font-weight: 700;
-    font-size:clamp(.5rem, 4vw, 5rem);
+    font-size:clamp(1rem, 4vw, 5rem);
     margin:0;
     padding: 0;
     
@@ -92,8 +92,13 @@ text-transform: uppercase;
     .right-col > img {
         width: 100%;
     }
+   
 }
-
+@media( max-width: 28.5em){
+    .title > p {
+        color: black;
+    }
+}
 
 
 
