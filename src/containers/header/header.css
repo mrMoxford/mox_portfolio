@@ -15,6 +15,7 @@
 .right-col{
     flex: 1;
     position: relative;
+  
 
 
 }
@@ -75,9 +76,8 @@ text-transform: uppercase;
 }
 .mox-profile-header_cta-button{
     position: absolute;
-    top:50%;
+    bottom:0;
     right: 0;
-    transform: translateY(-50%);
     transform: translateX(-50%);
     z-index: 99;
 }
@@ -105,16 +105,15 @@ text-transform: uppercase;
     .right-col > img {
         width: 100%;
     }
-    .mox-profile-header_cta-button{
-        top:75%;
-        
-    }
+  
 }
-@media (max-width: 48em){
+
+@media(max-width: 44rem){
     .mox-profile-header_cta-button{
         transform: none;
     }
 }
+   
 @media( max-width: 28.5em){
     .title > p {
         color: black;
