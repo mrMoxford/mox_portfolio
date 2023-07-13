@@ -21,7 +21,7 @@ const Navbar = () => {
       if (iterations >= value.length) {
         clearInterval(interval);
       }
-      iterations += 1/2 ;
+      iterations += 1/4 ;
     }, 10);
   };
   const handleNavLink = () =>{
