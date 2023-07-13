@@ -28,7 +28,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form | p-4 bg-black rounded-2xl text-white flex-1 ">
+    <div className="contact-form | p-4 bg-black text-white flex-1 ">
       {status && renderAlert()}
       <form ref={formRef} onSubmit={handleSubmit}>
         {/* <h3 className="text-gray-700 text-2xl font-semibold uppercase">Shoot me a message</h3> */}
@@ -36,7 +36,7 @@ const ContactForm = () => {
         <InputField label="E-mail" name="email" type="email" placeholder="john@exanple.com" />
         <SelectField label="Enquiry Type" name="enquiry" />
         <TextAreaField label="Your Message" name="message" />
-        <button value="submit" type="submit" className=" bg-white text-black rounded hover:bg-red-500 hover:text-white px-4 py-2 uppercase focus:outline-dashed">
+        <button value="submit" type="submit" className=" bg-white text-black  hover:bg-red-500 hover:text-white px-4 py-2 uppercase focus:outline-dashed">
           send
           <BsChevronCompactRight className=" w-6 ml-2 mt-1 float-right" />
         </button>
@@ -45,7 +45,7 @@ const ContactForm = () => {
   );
 };
 const renderAlert = () => (
-  <div className="sent-message | p-2 text-center text-green-700 bg-green-100 rounded">
+  <div className="sent-message | p-2 text-center text-green-700 bg-green-100">
     <p>Thanks for checking out my porfolio </p>
   </div>
 );
