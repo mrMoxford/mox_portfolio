@@ -5,7 +5,7 @@ const SelectField = ({ name, label }) => {
         {label}
       </label>
 
-      <select className="w-full border-b-2 b bg-gray-200 py-2 text-sm text-black  outline-none rounded-xl" defaultValue="enquiry" name={name} required>
+      <select className="w-full border-b-2 b bg-gray-200 py-2 text-sm text-black  h-10 outline-none rounded-xl" defaultValue="enquiry" name={name} required>
         <option value="">Choose your enquiry</option>
         <option value="freeLance" className="py-2">
           Freelance Work
