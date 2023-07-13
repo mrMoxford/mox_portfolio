@@ -36,16 +36,16 @@ const Navbar = () => {
           </div>
         <ul className="nav-list">
           <li className="navLink first">
-            <a  onMouseOver={(e)=> handleHover(e,'Home')} href="/">HOME</a>
+            <a  onMouseOver={(e)=> handleHover(e,'HOME')} href="/">HOME</a>
           </li>
           <li className="navLink second">
-            <a onMouseOver={(e)=> handleHover(e,'About')} href="#about">ABOUT</a>
+            <a onMouseOver={(e)=> handleHover(e,'ABOUT')} href="#about">ABOUT</a>
           </li>
           <li className="navLink third">
-            <a onMouseOver={(e)=> handleHover(e,'Projects')} href="#projects">PROJECTS</a>
+            <a onMouseOver={(e)=> handleHover(e,'PROJECTS')} href="#projects">PROJECTS</a>
           </li>
           <li className="navLink fourth">
-            <a onMouseOver={(e)=> handleHover(e,'Contact')} href="#contact">CONTACT</a>
+            <a onMouseOver={(e)=> handleHover(e,'CONTACT')} href="#contact">CONTACT</a>
           </li>
         </ul>
       </div>
