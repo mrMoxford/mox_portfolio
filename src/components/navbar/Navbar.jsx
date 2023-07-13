@@ -42,7 +42,7 @@ const Navbar = () => {
             <a onMouseOver={(e)=> handleHover(e,'About')} href="#about">ABOUT</a>
           </li>
           <li className="navLink third">
-            <a onMouseOver={(e)=> handleHover(e,'projects')} href="#projects">PROJECTS</a>
+            <a onMouseOver={(e)=> handleHover(e,'Projects')} href="#projects">PROJECTS</a>
           </li>
           <li className="navLink fourth">
             <a onMouseOver={(e)=> handleHover(e,'Contact')} href="#contact">CONTACT</a>
