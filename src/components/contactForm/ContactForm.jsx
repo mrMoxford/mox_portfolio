@@ -36,7 +36,7 @@ const ContactForm = () => {
         <InputField label="E-mail" name="email" type="email" placeholder="john@exanple.com" />
         <SelectField label="Enquiry Type" name="enquiry" />
         <TextAreaField label="Your Message" name="message" />
-        <button value="submit" type="submit" className=" bg-white text-black  hover:bg-red-500 hover:text-white px-4 py-2 uppercase focus:outline-dashed">
+        <button value="submit" type="submit" className=" bg-white text-black  hover:bg-red-500 hover:text-white my-4 px-4 py-2 uppercase focus:outline-dashed">
           send
           <BsChevronCompactRight className=" w-6 ml-2 mt-1 float-right" />
         </button>
