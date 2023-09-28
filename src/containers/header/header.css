@@ -28,7 +28,7 @@
  object-fit: cover;
  transition: opacity 200ms ease-in;
 }
-.right-col  .current {
+.right-col > .current {
     opacity: 100 
 }
 .right-col > p {
