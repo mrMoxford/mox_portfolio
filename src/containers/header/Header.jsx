@@ -26,9 +26,9 @@ const {performance,accessibilty,union,responsive, ExploreBtn} = index
   const handleActiveTitle = (parentNode, childNode, currentTarget) => {
     parentNode.forEach(sibling => sibling.classList.remove("current"))
     currentTarget.target.classList.add("current")
-    childNode.forEach(child => child.style.display = none)
+    childNode.forEach(child => child.style.opacity = 0)
     const current = childNode.find(item => item.getAttribute("name") === currentTarget.target.getAttribute("name"))
-    current.style.display = flex
+    current.style.opacity = 100
   }
   const handleActiveElipse = (svgArray,currentTarget)=>{
     const currentSvgs = svgArray.map(singleSVG=> singleSVG.current)
