@@ -21,11 +21,12 @@
 }
 .right-col > img{
  position: absolute;
+ opacity: 0;
  top: 0;
  height: 100%;
  width: 100%;
  object-fit: cover;
- transition: display 200ms ease-in;
+ transition: opacity 200ms ease-in;
 }
 .right-col > p {
     height: 100%;
