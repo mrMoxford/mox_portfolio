@@ -1,63 +1,73 @@
+import "./slider.css";
+import React, { useState, useRef } from "react";
+
 const Slider = ({ projects }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const[toggleInfo, setToggleInfo]= useState({expanded: "false", hidden: "true"})
+  const sliderRef = useRef(null);
+
+const handleAccordian = (e) =>  {
+  const activePanel = e.target.closest(".project-card")
+  if(activePanel){
+  const activeButton = activePanel.querySelector(".card-trigger")
+  const activeContent = activePanel.querySelector(".project-info")
+  return toggleAccordian(activeButton,activeContent)
+  }
+ 
+
+};
+
+const toggleAccordian = (activeButton,activeContent) => {
+  const contentIsVisible = activeButton.getAttribute("aria-expanded")
+  if(contentIsVisible === "true"){
+    activeButton.setAttribute("aria-expanded", false)
+    activeContent.setAttribute("aria-hidden", true)
+  }
+  else {
+    activeButton.setAttribute("aria-expanded", true)
+    activeContent.setAttribute("aria-hidden", false)
+  }
+  
+}
   return (
-    <div className="mox__profile-slider flex">
+    <div ref={sliderRef} onClick={(e)=> handleAccordian(e)} id="blur" className="mox__profile-slider | flex">
       <div className="mox__profile-slider_container flex">
         {projects.map((project, index) => (
           <div key={index} className="project-card flex">
-
             <div className="flex flex-col relative">
-              <img
-                className="project-img"
-                src={project.image}
-                alt={project.name}
-              />
-
-              {/* Accordion Trigger */}
-              <button
-                className="card-trigger"
-                aria-expanded="false"
-                aria-controls={`project--${index}`}
-                onClick={(e) => {
-                  const button = e.currentTarget;
-                  const content = document.getElementById(`project--${index}`);
-
-                  const isExpanded = button.getAttribute("aria-expanded") === "true";
-
-                  button.setAttribute("aria-expanded", !isExpanded);
-                  content.setAttribute("aria-hidden", isExpanded);
-                }}
-              />
-            </div>
-
-            {/* Accordion Content */}
-            <div
-              className="project-info"
-              id={`project--${index}`}
-              aria-hidden="true"
-            >
-              <div className="info-container">
-                <h3>{project.name}</h3>
-                <p>{project.summary}</p>
-
-                <div className="project-links">
-                  <a
-                    className="project__live-site"
-                    href={project.live}
-                    target="_blank"
-                  >
-                    Live
-                  </a>
-                  <a
-                    className="project__Github-site"
-                    href={project.github}
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </div>
+              {console.log(project.image)}
+            <img
+              className="project-img"
+              src={project.image}
+              alt={project.name}
+             
+            />
+              <button className="card-trigger" aria-expanded="false" aria-controls={`project--${index}`}></button>
+              </div>
+            <div  className="project-info" id={`project--${index}`} aria-hidden="true" >
+              <div  className="info-container"  >
+              <h3>{project.name}</h3>
+              <p>
+               {project.summary}
+              </p>
+              <div className="project-links">
+                <a
+                  className="project__live-site"
+                  href={project.live}
+                  target="_blank"
+                >
+                  Live
+                </a>
+                <a
+                  className="project__Github-site"
+                  href={project.github}
+                  target="_blank"
+                >
+                  Code
+                </a>
+              </div>
               </div>
             </div>
-
           </div>
         ))}
       </div>
@@ -65,3 +75,7 @@ const Slider = ({ projects }) => {
   );
 };
 export default Slider;
+
+const calculateTransform = () => {
+  return `translateX(-${currentIndex * 10}%)`;
+};
