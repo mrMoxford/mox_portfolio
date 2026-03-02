@@ -10,7 +10,7 @@ const Projects = () => {
     live:"https://odessycoffee.netlify.app/",
     github:"https://github.com/mrMoxford/CoffeeProject",
     summary: 
-    "I’m a big fan of coffee so much so that I’ve dedicated a whole section of my apartment to drip coffee equipment and utensils. Odessy Java is an exploration of my passion for coffee the idea behind this website is about exploring the world of coffee, and having access to boutique single origin coffee from around the world the world. The site was built with React and Vite on the frontend and Node, Express and MongoDB for the backend." 
+    "I’m a big fan of coffee so much so that I’ve dedicated a whole section of my apartment to drip coffee equipment and utensils. Odessy is an exploration of my passion for coffee the idea behind this website is about exploring the world of coffee, and having access to boutique single origin coffee from around the world the world. The site was built with React and Vite on the frontend and Node, Express and MongoDB for the backend." 
     ,
   },
   {name: "ChatGPT3Project",
