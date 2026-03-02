@@ -64,3 +64,4 @@ const Slider = ({ projects }) => {
     </div>
   );
 };
+export default Slider;
