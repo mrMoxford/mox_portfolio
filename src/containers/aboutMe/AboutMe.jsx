@@ -42,7 +42,11 @@ const AboutMe = () => {
       </h2>
       <div ref={contentRef} className="content">
         <div className="img-container ">
-          <img src={ProfilePhotoNoBg2} alt="coffee placeholder" />
+          <img
+            className="profileImg"
+            src={ProfilePhotoNoBg2}
+            alt="coffee placeholder"
+          />
         </div>
         <div className="about-me__text | flex flex-col align-end">
           <div id="first-slide" className="mask">
