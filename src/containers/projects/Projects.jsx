@@ -3,7 +3,7 @@ import React from "react";
 import { Slider } from "src/components";
 import index from "src/assets/index"
 const Projects = () => {
-  const {coffee , space , gpt3} = index;
+  const {coffee , space , gpt3, gamehub,globalseed} = index;
   const projects = [{
     name: "coffeeProject",
     image:coffee,
@@ -14,17 +14,17 @@ const Projects = () => {
     ,
   }, {
     name: "GlobalSeed",
-    image: "",
+    image: "globalseed",
     live: "https://global-seed.vercel.app/",
     github: "https://github.com/mrMoxford/GlobalSeed",
     summary: "This was an Sports English camp that i designed a simple website for so they could inform customers the type of programs that they offer",
   },{
     name: "GameHub",
-    image: "",
+    image: "gamehub",
     live: "https://game-hub-kappa-khaki.vercel.app/",
     github: "https://github.com/mrMoxford/game-hub",
     summary: "This was an experimental project working with react-query and Zustand",
-  }
+  },
   {name: "ChatGPT3Project",
     image: gpt3,
     live:"https://chatgpt3project.netlify.app",
