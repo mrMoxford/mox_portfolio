@@ -29,6 +29,8 @@ import coffee04 from "/coffee04.png"
 import coffee from "/coffeeProject.png";
 import gpt3  from "/gpt3Project.png"
 import space from "/spaceProject.png"
+import gamehub from "/gamehubimg.png"
+import globalseed from "/globalseedImg.png"
 
 
 
@@ -65,5 +67,8 @@ coffee04,
 coffee,
 gpt3,
 space,
+gamehub,
+globalseed,
+  
 
 }
