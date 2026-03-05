@@ -12,7 +12,19 @@ const Projects = () => {
     summary: 
     "I’m a big fan of coffee so much so that I’ve dedicated a whole section of my apartment to drip coffee equipment and utensils. Odessy is an exploration of my passion for coffee the idea behind this website is about exploring the world of coffee, and having access to boutique single origin coffee from around the world the world. The site was built with React and Vite on the frontend and Node, Express and MongoDB for the backend." 
     ,
-  },
+  }, {
+    name: "GlobalSeed",
+    image: "",
+    live: "https://global-seed.vercel.app/",
+    github: "https://github.com/mrMoxford/GlobalSeed",
+    summary: "This was an Sports English camp that i designed a simple website for so they could inform customers the type of programs that they offer",
+  },{
+    name: "GameHub",
+    image: "",
+    live: "https://game-hub-kappa-khaki.vercel.app/",
+    github: "https://github.com/mrMoxford/game-hub",
+    summary: "This was an experimental project working with react-query and Zustand",
+  }
   {name: "ChatGPT3Project",
     image: gpt3,
     live:"https://chatgpt3project.netlify.app",
