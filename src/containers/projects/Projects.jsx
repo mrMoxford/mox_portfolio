@@ -8,7 +8,7 @@ const Projects = () => {
     {
       name: "coffeeProject",
       image: coffee,
-      live: "https://coffee-shop-ljc16gyq3-moxs-projects-ba39dac4.vercel.app/",
+      live: "https://coffee-shop-dusky-ten.vercel.app/",
       github: "https://github.com/mrMoxford/CoffeeShop",
       summary:
         "I’m a big fan of coffee so much so that I’ve dedicated a whole section of my apartment to drip coffee equipment and utensils. Odessy is an exploration of my passion for coffee the idea behind this website is about exploring the world of coffee, and having access to boutique single origin coffee from around the world the world. The site was built with React and Vite on the frontend and Node, Express and MongoDB for the backend.",
