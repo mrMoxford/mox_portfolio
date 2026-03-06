@@ -1,92 +1,77 @@
 .mox__profile-slider{
-    width: 100%;
-    height: 100%;
+ width:100%;
 }
 
 .mox__profile-slider_container{
-    grid-template-columns: repeat(3,1fr);
-    width: 100%;
-    height:max-content;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap:2rem;
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+ gap:2rem;
 }
-.project-img{
-  width: 100%;
-  height: 100%;
-   
-}
+
 .project-card{
-    flex-direction: column;
-    column-gap: 2rem;
-    border: 2px solid black;
-    width:100%;
-    cursor: pointer;
+ display:flex;
+ flex-direction:column;
+ cursor:pointer;
 }
+
+.project-image_container{
+ position:relative;
+ aspect-ratio:4/3;
+ overflow:hidden;
+}
+
+.project-img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ display:block;
+}
+
+.card-trigger{
+ position:absolute;
+ inset:0;
+ background:transparent;
+ border:none;
+ cursor:pointer;
+}
+
 .project-info{
-    display: grid;
-    position: relative;
-    grid-template-rows: 0fr;
-    background-color: black;
-    color: white;         
-    /* padding: 2rem; */
-    transition: grid-template-rows 500ms ease-in-out;
-    border: 2px solid black;
-}
-.project-info > * {
-    overflow: hidden;
-    
+ display:grid;
+ grid-template-rows:0fr;
+ background:black;
+ color:white;
+ padding: .5rem;
+ transition:grid-template-rows 500ms ease;
 }
 
 .project-info[aria-hidden="false"]{
-    grid-template-rows: 1fr;
-}
-.card-trigger > button{
-    margin:0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    height:100%;
-    width:100%;
-    z-index: 100;
+ grid-template-rows:1fr;
 }
 
-.project-info > a {
-    font-size: 1.5rem;
-} 
-.project-links{
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.project__live-site{
-    background: white;
-    color:black;
-    padding: 0 1rem;
-    border-radius: 1rem;
-}
-.project__Github-site{
-    border: 2px solid white;
-    padding: 0 1rem;
-    border-radius: 1rem;
-}
-.info-container{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+.project-info > *{
+ overflow:hidden;
 }
 .info-container > h3 {
-   padding: 1rem;
-   font-size: 1rem;
-   text-transform: uppercase;
+    font-size: large ;
+    margin-block: .5rem;
+    text-transform:uppercase;
 }
 .info-container > p {
-    padding:1rem;
+    font-size: small;
 }
-@media(max-width: 50em){
-    .mox__profile-slider_container{
-        flex-direction: column;
-    }
-}
+.project-links{ 
+    padding: 1rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; }
+.project__live-site{ 
+    background: red; 
+    color:white; 
+    padding: 0 1rem; 
+    border-radius: 1rem; } 
+.project__Github-site{ 
+    background: white;
+    color: black;
+    padding: 0 1rem; 
+    border-radius: 1rem; }
