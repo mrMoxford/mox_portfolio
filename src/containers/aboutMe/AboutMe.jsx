@@ -31,7 +31,7 @@ const AboutMe = () => {
     return () => ctx.revert();
   }, []);
 
-  const { ProfilePhotoNoBg2 } = index;
+  const { Mox } = index;
   return (
     <section
       id="about"
@@ -42,20 +42,16 @@ const AboutMe = () => {
       </h2>
       <div ref={contentRef} className="content">
         <div className="img-container ">
-          <img
-            className="profileImg"
-            src={ProfilePhotoNoBg2}
-            alt="coffee placeholder"
-          />
+          <img className="profileImg" src={Mox} alt="coffee placeholder" />
         </div>
         <div className="about-me__text | flex flex-col align-end">
           <div id="first-slide" className="mask">
             <p className="animated-text hide">
-              Hi, I’m Mox — a Tokyo-based Front-end Developer building
-              high-performance, scalable web applications with React, Next.js,
-              and TypeScript. I focus on creating clean, responsive interfaces
-              where performance, accessibility, and attention to detail are
-              treated as core priorities.
+              Hi, I’m Mox — a Tokyo-based Front-end Developer and Designer
+              building high-performance, scalable web applications with React,
+              Next.js, and TypeScript. I focus on creating clean, responsive
+              interfaces where performance, accessibility, and attention to
+              detail are valued.
             </p>
           </div>
           <div className="mask">

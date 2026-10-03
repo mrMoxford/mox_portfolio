@@ -1,12 +1,11 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
         "paths": {
             "src/*": ["./src/*"],
             "assets/*":["./src/assets/*"],
             "components/*": ["./src/components/*"],
             "containers/*" :["./src/containers/*"],
-            "constants/*" : ["./src/constants/*"],
+            "constants/*" : ["./src/constants/*"]
         }
     }
 }

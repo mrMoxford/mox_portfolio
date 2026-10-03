@@ -5,6 +5,7 @@ import tileBg from "/tileBg.png";
 import ProfilePhoto from "/ProfilePhoto.svg";
 import ProfilePhotoNoBg from "/ProfilePhotoNoBg.png";
 import ProfilePhotoNoBg2 from "/ProfilePhotoNoBg2.png";
+import Mox from "./Mox.jpeg";
 import ExploreBtnBw from "/ExploreBtnBw.png";
 import ExploreBtn from "/ExploreBtn.png";
 import menuClose from "/menuClose.png";
@@ -68,4 +69,5 @@ export default {
   gamehub,
   globalseed,
   closedEye,
+  Mox,
 };
