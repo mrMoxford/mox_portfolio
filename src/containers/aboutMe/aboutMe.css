@@ -1,5 +1,4 @@
 .about-me{
-    height: 100%;
     color: black;
     background-color:white;
     display:flex;
@@ -8,10 +7,6 @@
 }
 .content{
     display: flex;
-    height:100%;
-    width:100%;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
    
     
@@ -19,27 +14,29 @@
 .about-me__title{
    align-self:flex-end;
 }
-.img-container >img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
-}
+
 .img-container{
     display:flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .about-me__text{
-    height:100%;
-    text-align: right;
     gap: 2rem;
+    justify-content: center;
+
+
 }
 .mask{
     overflow: hidden;
 }
+.about-me__name    { display: block; font-size: 3rem; font-weight: 700; line-height: 1; }
+.about-me__role    { display: block; font-size: 1.5rem; font-weight: 500; }
+.about-me__stack   { display: block; font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.7; margin-block: 0.5rem 1rem; }
+.about-me__heading { display: block; font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; }
+.about-me__values  { display: block; margin-block: 0.75rem; }
 .hide{
     transform: translateY(-100%);
     animation-name: slideDown;
